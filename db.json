@@ -1,0 +1,54 @@
+{
+  "attributes": [
+    {
+      "id": 1,
+      "name": "attribute 1"
+    },
+    {
+      "id": 2,
+      "name": "attribute 2"
+    },
+    {
+      "id": 3,
+      "name": "attribute 3"
+    }
+  ],
+
+  "products": [
+    {
+      "id": 1,
+      "description": "Product 1",
+      "demands": [1, 2]
+    }
+  ],
+
+  "demands": [
+    {
+      "id": 1,
+      "name": "P&G Demand",
+      "attributes": [1, 2],
+      "product": 1,
+      "dueDate": 1
+    },
+    {
+      "id": 2,
+      "name": "Buderus Demand",
+      "attributes": [3],
+      "product": 1,
+      "dueDate": 1
+    }
+  ],
+
+  "companies": [
+    {
+      "id": 1,
+      "name": "P&G",
+      "demands": [1]
+    },
+    {
+      "id": 2,
+      "name": "Buderus",
+      "demands": [2]
+    }
+  ]
+}

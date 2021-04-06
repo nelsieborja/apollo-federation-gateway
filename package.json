@@ -1,0 +1,26 @@
+{
+  "name": "graphql-metamodel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "concurrently -k npm:server:*",
+    "server:rest": "json-server -q -w -p 4444 db.json",
+    "server:metamodel": "nodemon metamodel/index.js",
+    "server:configuration": "nodemon configuration/index.js",
+    "server:graphql": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/federation": "^0.21.0",
+    "@apollo/gateway": "^0.22.0",
+    "apollo-server": "^2.19.2",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "json-server": "^0.16.3",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}

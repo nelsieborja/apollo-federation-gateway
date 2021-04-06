@@ -1,0 +1,1 @@
+Distributed GraphQL architecture and breakup the schema into multiple smaller services for development purposes then recombine each separately managed portion of the schema into a gateway API so that client apps can remain agnostic to these divisions when querying data
